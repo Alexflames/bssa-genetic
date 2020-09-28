@@ -11,8 +11,8 @@ using std::ifstream;
 
 //#define GEOM_GRAPH
 //#define BA_GRAPH
-#define ERDOSH_GRAPH
-//#define REAL_GRAPH
+//#define ERDOSH_GRAPH
+#define REAL_GRAPH
 
 //#define SIMPLE_GA
 #define OUR_GA
@@ -74,10 +74,10 @@ int main() {
 
 	cout << "N = " << n << " M = " << m << endl;
 	ExactAlgorithm alg(n, m, e);
- 	double t1 = alg.TrivialAlgorithm();
-	cout << "TrivialAlgorithm:" << t1 << endl;
+ 	//double t1 = alg.TrivialAlgorithm();
+	//cout << "TrivialAlgorithm:" << t1 << endl;
 	
-	alg.AingworthAlgorithm();
+	//alg.AingworthAlgorithm();
 	#ifdef BA_GRAPH
 		const int REAL_R = RADIUS_BA[TEST];
 	#endif
